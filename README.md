@@ -4,7 +4,7 @@ Application professionnelle de création d'animations stop-motion développée a
 
 ## 🚀 Démarrage rapide avec GitHub Codespaces
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/votre-username/stop-motion-studio)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fabiencroguennec/StopMotion)
 
 1. **Cliquez sur le badge ci-dessus** ou allez dans votre repo > Code > Codespaces > Create
 2. **Attendez l'initialisation** (2-3 minutes)
