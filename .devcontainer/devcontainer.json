@@ -1,21 +1,16 @@
+```json
 {
   "name": "Stop Motion Studio Dev Environment",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
   
-  // Ports automatiquement forwardés
   "forwardPorts": [3000, 8000, 8080],
   "portsAttributes": {
     "3000": {
       "label": "React App",
       "onAutoForward": "openBrowser"
-    },
-    "8000": {
-      "label": "Python Server",
-      "onAutoForward": "openBrowser"
     }
   },
   
-  // Extensions VS Code automatiquement installées
   "customizations": {
     "vscode": {
       "extensions": [
@@ -23,55 +18,34 @@
         "bradlc.vscode-tailwindcss",
         "ms-vscode.vscode-json",
         "ms-vscode.live-server",
-        "ms-python.python",
         "formulahendry.auto-rename-tag",
-        "christian-kohler.path-intellisense",
-        "ms-vscode.hexeditor",
-        "ms-toolsai.jupyter",
-        "GitHub.copilot"
+        "christian-kohler.path-intellisense"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
           "source.fixAll.eslint": true
-        },
-        "typescript.preferences.includePackageJsonAutoImports": "on",
-        "emmet.includeLanguages": {
-          "javascript": "javascriptreact"
         }
       }
     }
   },
   
-  // Commandes exécutées après création du container
   "postCreateCommand": "npm install && echo '🎉 Environment prêt ! Tapez: npm start'",
-  
-  // Commandes au démarrage
   "postStartCommand": "echo '📹 Stop Motion Studio - Codespace ready!'",
   
-  // Features additionnelles
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.10"
     }
   },
   
-  // Configuration container
   "remoteUser": "node",
-  "workspaceFolder": "/workspaces/stop-motion-studio",
-  
-  // Variables d'environnement
   "remoteEnv": {
     "REACT_APP_ENV": "development",
     "BROWSER": "none",
     "NODE_ENV": "development"
-  },
-  
-  // Montages additionnels
-  "mounts": [
-    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
-  ]
+  }
 }
+```
