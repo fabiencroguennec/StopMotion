@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+}
+
+.min-h-screen { min-height: 100vh; }
+.bg-black { background-color: #000; }
+.text-white { color: #fff; }
+.absolute { position: absolute; }
+.relative { position: relative; }
+.flex { display: flex; }
+.hidden { display: none; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.object-cover { object-fit: cover; }
+.cursor-pointer { cursor: pointer; }
+.flex-shrink-0 { flex-shrink: 0; }
